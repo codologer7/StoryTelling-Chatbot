@@ -1,0 +1,88 @@
+{
+  "name": "Story",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Title of the impact story"
+    },
+    "community_issue": {
+      "type": "string",
+      "description": "The main community issue being addressed"
+    },
+    "storyteller_name": {
+      "type": "string",
+      "description": "Name of the person telling the story"
+    },
+    "storyteller_role": {
+      "type": "string",
+      "description": "Role or position of the storyteller"
+    },
+    "organization": {
+      "type": "string",
+      "description": "Organization involved in the story"
+    },
+    "location": {
+      "type": "string",
+      "description": "Geographic location of the story"
+    },
+    "impact_description": {
+      "type": "string",
+      "description": "Description of the impact or change made"
+    },
+    "beneficiaries_count": {
+      "type": "number",
+      "description": "Number of people impacted"
+    },
+    "challenges_faced": {
+      "type": "string",
+      "description": "Key challenges encountered"
+    },
+    "solutions_implemented": {
+      "type": "string",
+      "description": "Solutions that were implemented"
+    },
+    "measurable_outcomes": {
+      "type": "string",
+      "description": "Specific measurable results"
+    },
+    "future_goals": {
+      "type": "string",
+      "description": "Future aspirations and goals"
+    },
+    "personal_motivation": {
+      "type": "string",
+      "description": "What personally motivates the storyteller"
+    },
+    "call_to_action": {
+      "type": "string",
+      "description": "What action the storyteller wants readers to take"
+    },
+    "raw_responses": {
+      "type": "object",
+      "description": "Raw interview responses"
+    },
+    "generated_story": {
+      "type": "string",
+      "description": "AI-generated polished story"
+    },
+    "flyer_url": {
+      "type": "string",
+      "description": "URL to generated flyer image"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "in_progress",
+        "completed",
+        "published"
+      ],
+      "default": "in_progress",
+      "description": "Status of the story"
+    }
+  },
+  "required": [
+    "title",
+    "storyteller_name"
+  ]
+}
